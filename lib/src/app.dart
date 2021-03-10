@@ -35,7 +35,7 @@ class AppState extends State<App> {
           child: Icon(Icons.add),
         ),
         appBar: AppBar(
-          title: Text('Let us fetch some images'),
+          title: Text('Fetch some images'),
         ),
         body: ImageList(images),
       ),
