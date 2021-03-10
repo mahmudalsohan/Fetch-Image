@@ -29,14 +29,16 @@ class AppState extends State<App> {
 
   Widget build(context) {
     return MaterialApp(
-        home: Scaffold(
-            floatingActionButton: FloatingActionButton(
-              onPressed: fetchImage,
-              child: Icon(Icons.add),
-            ),
-            appBar: AppBar(
-              title: Text('Let us see some images'),
-            ),
-            body: ImageList(images)));
+      home: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          onPressed: fetchImage,
+          child: Icon(Icons.add),
+        ),
+        appBar: AppBar(
+          title: Text('Let us fetch some images'),
+        ),
+        body: ImageList(images),
+      ),
+    );
   }
 }
